@@ -33,13 +33,18 @@ public class EnemyPatrolController : MonoBehaviour
             {
                 //chicken chases player
                 agent.SetDestination(player.position);
-                transform.LookAt(player);
+                //transform.LookAt(player);
+
+                transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
+
+                agent.speed = 10f;
             }
         }
         else
         {
             if(!agent.pathPending && agent.remainingDistance < 0.5f)
             {
+                agent.speed = 5f;
                 moveToNextLocation();
             }
         }

@@ -3784,6 +3784,10 @@ PrefabInstance:
       propertyPath: maxRange
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 5985153597118649544, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7717132461467084985, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
       propertyPath: m_Name
       value: EnemyPatrol
@@ -3798,7 +3802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7717132461467084991, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.09
+      value: -14.23
       objectReference: {fileID: 0}
     - target: {fileID: 7717132461467084991, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3836,9 +3840,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7717132462065707345, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7717132462065707348, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
       propertyPath: m_Speed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717132462065707348, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717132462065707348, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717132462065707348, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_AutoBraking
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7717132462542617158, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
       propertyPath: patrolLocations.Array.data[0]
@@ -3852,5 +3872,25 @@ PrefabInstance:
       propertyPath: patrolLocations.Array.data[2]
       value: 
       objectReference: {fileID: 148724634}
+    - target: {fileID: 7823450102681946977, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823450102681946977, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823450102681946977, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9962198
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823450102681946977, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823450102681946977, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.086868785
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
