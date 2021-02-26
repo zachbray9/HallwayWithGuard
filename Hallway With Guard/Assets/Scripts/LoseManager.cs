@@ -6,26 +6,15 @@ using UnityEngine.SceneManagement;
 public class LoseManager : MonoBehaviour
 {
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter(Collider collider)
     {
+
         if(collider.gameObject.name == "First Person Player")
         {
-            Debug.Log("You lose!");
+            //Debug.Log("You lose!");
+            SceneManager.LoadScene(3);
         }
+
     }
 
 }
