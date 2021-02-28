@@ -11,13 +11,17 @@ public class EnemyPatrolController : MonoBehaviour
     public Transform[] patrolLocations;
 
     public float maxRange;
-    private int destPoint = 0; 
+    private int destPoint = 0;
 
+    public AudioClip chickenSound;
+    AudioSource audioSource;
 
 
     void Start()
     {
         moveToNextLocation();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -38,6 +42,8 @@ public class EnemyPatrolController : MonoBehaviour
                 transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
 
                 agent.speed = 10f;
+
+                PlaySound(chickenSound);
             }
         }
         else
@@ -104,6 +110,11 @@ public class EnemyPatrolController : MonoBehaviour
 
         return false;
 
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
 }
