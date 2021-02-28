@@ -116,6 +116,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   maxRange: 50
+  chickenSound: {fileID: 0}
 --- !u!195 &7717132462065707348
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -223,6 +224,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &568502409
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7483200031425685036}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e831d2c9c9d052543ae31467c8ecae33, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &568502401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +262,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   maxRange: 50
+  chickenSound: {fileID: 8300000, guid: 5d812a2f2c1678241869642e6d6eaa61, type: 3}
 --- !u!195 &568502406
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -276,25 +297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bce610db53c2704e9de3ea174ee6670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &568502409
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7483200031425685036}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e831d2c9c9d052543ae31467c8ecae33, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7717132461467084985
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +469,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   maxRange: 0
+  chickenSound: {fileID: 0}
 --- !u!1001 &7717132460963453821
 PrefabInstance:
   m_ObjectHideFlags: 0

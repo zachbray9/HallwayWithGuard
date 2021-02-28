@@ -11,8 +11,10 @@ public class EnemyPatrolController : MonoBehaviour
     public Transform[] patrolLocations;
 
     public float maxRange;
-    private int destPoint = 0; 
+    private int destPoint = 0;
 
+    public AudioClip chickenSound;
+    AudioSource audioSource;
 
 
     void Start()
@@ -104,6 +106,11 @@ public class EnemyPatrolController : MonoBehaviour
 
         return false;
 
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
 }
