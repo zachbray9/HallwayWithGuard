@@ -20,6 +20,8 @@ public class EnemyPatrolController : MonoBehaviour
     void Start()
     {
         moveToNextLocation();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -40,6 +42,8 @@ public class EnemyPatrolController : MonoBehaviour
                 transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
 
                 agent.speed = 10f;
+
+                PlaySound(chickenSound);
             }
         }
         else
