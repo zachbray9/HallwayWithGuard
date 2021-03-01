@@ -17,6 +17,13 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private float vertical;
     private bool isGrounded;
+
+    Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     
 
     // Update is called once per frame
@@ -31,6 +38,21 @@ public class PlayerMovement : MonoBehaviour
 
         horizontal = Input.GetAxis("Horizontal"); 
         vertical = Input.GetAxis("Vertical");  
+
+
+
+        /*
+        if(Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
+        */
+
+
 
         movement = transform.right * horizontal + transform.forward * vertical;
 

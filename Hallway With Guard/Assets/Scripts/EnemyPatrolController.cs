@@ -15,6 +15,7 @@ public class EnemyPatrolController : MonoBehaviour
 
     public AudioClip chickenSound;
     AudioSource audioSource;
+    Animator animator;
 
 
     void Start()
@@ -22,6 +23,7 @@ public class EnemyPatrolController : MonoBehaviour
         moveToNextLocation();
 
         audioSource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
 
 
@@ -41,17 +43,19 @@ public class EnemyPatrolController : MonoBehaviour
 
                 transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
 
-                agent.speed = 10f;
+                agent.speed = 20f;
 
                 PlaySound(chickenSound);
+                animator.SetBool("isWalking", false);
             }
         }
         else
         {
             if(!agent.pathPending && agent.remainingDistance < 0.5f)
             {
-                agent.speed = 5f;
+                agent.speed = 10f;
                 moveToNextLocation();
+                animator.SetBool("isWalking", true);
             }
         }
         
