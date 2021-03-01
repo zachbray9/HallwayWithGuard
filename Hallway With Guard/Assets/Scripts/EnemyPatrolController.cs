@@ -43,7 +43,7 @@ public class EnemyPatrolController : MonoBehaviour
 
                 transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
 
-                agent.speed = 20f;
+                agent.speed = 19f;
 
                 PlaySound(chickenSound);
                 animator.SetBool("isWalking", false);
