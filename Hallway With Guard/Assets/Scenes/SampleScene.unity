@@ -372,6 +372,7 @@ Transform:
   - {fileID: 1982489369}
   - {fileID: 651368441}
   - {fileID: 1078925232}
+  - {fileID: 1325164480}
   - {fileID: 1846733577}
   - {fileID: 2082538924}
   - {fileID: 143668881}
@@ -380,7 +381,6 @@ Transform:
   - {fileID: 1481389669}
   - {fileID: 819866459}
   - {fileID: 1728125595}
-  - {fileID: 1325164480}
   m_Father: {fileID: 823281432}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20827,7 +20827,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 16079434}
-  m_RootOrder: 225
+  m_RootOrder: 217
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1329539263
 PrefabInstance:
@@ -23275,7 +23275,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556345763}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a76e7dbaeeeae114aab854f2986f0744, type: 3}
@@ -31980,7 +31980,7 @@ PrefabInstance:
     - target: {fileID: 568502401, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
       propertyPath: chickenSound
       value: 
-      objectReference: {fileID: 8300000, guid: a76e7dbaeeeae114aab854f2986f0744, type: 3}
+      objectReference: {fileID: 8300000, guid: 79ed915de4c28314da782389ac6b34a9, type: 3}
     - target: {fileID: 568502401, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
       propertyPath: patrolLocations.Array.data[3]
       value: 
@@ -32016,6 +32016,14 @@ PrefabInstance:
     - target: {fileID: 3501488552158748618, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
       propertyPath: Loop
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501488552158748618, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 79ed915de4c28314da782389ac6b34a9, type: 3}
+    - target: {fileID: 3501488552158748618, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5985153597118649544, guid: c41fcba91d774314fb1e9e00cbcd03eb, type: 3}
       propertyPath: player

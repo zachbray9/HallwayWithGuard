@@ -12,6 +12,7 @@ public class EnemyPatrolController : MonoBehaviour
 
     public float maxRange;
     private int destPoint = 0;
+    private bool soundPlayed = false;
 
     public AudioClip chickenSound;
     AudioSource audioSource;
@@ -23,6 +24,7 @@ public class EnemyPatrolController : MonoBehaviour
         moveToNextLocation();
 
         audioSource = GetComponent<AudioSource>();
+        audioSource.clip = chickenSound;
         animator = GetComponent<Animator>();
     }
 
@@ -45,7 +47,28 @@ public class EnemyPatrolController : MonoBehaviour
 
                 agent.speed = 19f;
 
-                PlaySound(chickenSound);
+
+
+                //PlaySound(chickenSound);
+
+                if(!soundPlayed)
+                {
+                    if(!audioSource.isPlaying)
+                    {
+                        PlaySound(chickenSound);
+                        soundPlayed = true;
+                    }
+                }
+                else
+                {
+                    if(soundPlayed)
+                    {
+                        soundPlayed = false;
+                    }
+                }
+                
+
+
                 animator.SetBool("isWalking", false);
             }
         }
